@@ -1,45 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
   <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width-device-with, inital-scale=1.0">
-    <title>Document</title>
-  </head>
-  <body>
-    <p>오늘 점심은?</p>
-    <form action="서버프로그램">
-      <p>햄버거 <input type="checkbox" name="ham" value="1" checked></p>
-      <p>돼지국밥 <input type="checkbox" name="soup" value="2"></p>
-      <p>돈까스 <input type="checkbox" name="pork" value="3"></p>
-    <input type="submit" value="전송">
-    </form>
-    <p>오늘 저녁은?</p>
-    <form action="서버프로그램">
-      <p><label><input id="burger" type="radio" name="dinner" value="1" checked><label for="burger">햄버거</label></p>
-      <p><label><input id="soup" type="radio" name="dinner" value="2" checked><label for="soup">돼지국밥</label></p>
-      <p><label><input id="pork" type="radio" name="dinner" value="3" checked><label for="pork">돈까스</label></p>
-    <input type="submit" value="전송">
-    </form>
-    <p>오늘의 간식?</p>
-    <form action="서버프로그램">
-      <select name="snack" id="">
-        <option value="" selected>선택하세요</option>
-        <option value="1">초콜릿</option>
-        <option value="2">빵</option>
-        <option value="3">과자</option>
-      </select>
-    <p><button>전송</button></p>
-    <p><button><img src="/media/2장/media/mango.png" alt=""></button></p>
-    <p><input type="image" src="/media/2장/media/apple.png"></p>
-    <p>오늘의 간식?</p>
-    <form action name="서버프로그램">
-      <p>야식 : <input type="text" name="" ></p>
-     
-      
-      <p><button>전송</button></p>
-      <p><button></button></p>
-      <p></p>
-    </form>
-  </body>  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    window.ondblclick = function() {
+      let $R = Math.floor(Math.random()*256);
+      let $G = Math.floor(Math.random()*256);
+      let $B = Math.floor(Math.random()*256);
+        document.body.style.backgroundColor = 'rgb('+$R+','+$G+','+$B+')';
+    }
+    //아이구
+   </script>
+</head>
+<body>
+  <h3>바탕 아무 곳에나 더블 클릭</h3>
+  <hr>
+  <p>바탕 아무 곳이나 더블클릭하면 배경색이 랜덤하게 변합니다.</p>
+  
+</body>
 </html>
